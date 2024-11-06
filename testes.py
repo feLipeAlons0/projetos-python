@@ -1,9 +1,11 @@
 print('---------------------Bem vindo a nossa lanchonete virtual----------------------')
-try:
-    A = int(input('Deseja ver nosso cardápio:\n1. Sim\n2. Não\n-->'))
-except:
-    print('Digite apenas 1 ou 2 para prosseguir')
-    A = int(input('Deseja ver nosso cardápio:\n1. Sim\n2. Não\n-->'))
+while (True):
+    try:
+        A = int(input('Deseja ver nosso cardápio:\n1. Sim\n2. Não\n-->'))
+        break
+    except ValueError:
+        print('Digite apenas 1 ou 2 para prosseguir')
+
 
 
 match (A):
