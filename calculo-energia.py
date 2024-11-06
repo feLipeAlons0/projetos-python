@@ -34,7 +34,8 @@ def calculo_energia():
         tipo_de_instalacao = int(input(
             'Qual o tipo da sua instalação:\n1. Residencial\n2. Comercial\n3. Industrial\n--> '))
         confirmacao(tipo_de_instalacao)
-
+    except ValueError:
+        print('O valor deve ser inteiro')
     except:
         print('Ops, verificamos aqui que você não digitou um valor correto, na quantidade consumida de KWh, deve conter apenas números.')
         calculo_energia()
